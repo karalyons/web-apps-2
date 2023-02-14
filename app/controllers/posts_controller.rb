@@ -12,7 +12,7 @@ class PostsController < ApplicationController
     @post = Post.new
     @post["author"] = params["post"]["author"]
     @post["body"] = params["post"]["body"]
-    @post["imaage"] = params["post"]["imaage"]
+    @post["image"] = params["post"]["image"]
     @post.save
     redirect_to "/posts"
   end
